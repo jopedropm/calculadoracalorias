@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA DE CALORIAS</title>
+    <link rel="icon" href="imagens/calculadora.svg">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsiveMobile.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <div>
+            <img id="logo" src="imagens/calculadora.svg" alt="">
+        </div>
+    </header>
+    <img id="imgbackground" src="imagens/background.svg" alt="">
+    <div id="container">
+        <h1>CALCULADORA DE CALORIAS<br>DIÁRIAS</h1>
+        <div id="calculadora">
+            <form>
+                <div id="generos" class="content">
+                    <div class="genero">
+                        <label for="homem">
+                            <img src="imagens/homem.svg" alt="">
+                            Homem</label>
+                        <input type="radio" id="homem" class="radio" name="genero" value="homem">
+                    </div>
+                    <div class="genero">
+                        <label for="mulher">
+                            <img src="imagens/mulher.svg" alt="">
+                        Mulher</label>
+                        <input type="radio" id="mulher" class="radio" name="genero" value="mulher">
+                    </div>
+                </div>
+    
+                <div class="content">
+                    <label>Idade:</label>
+                    <input class="input" type="text" id="idade" placeholder="ANOS">
+                </div>
+    
+                <div class="content">
+                    <label>Altura:</label>
+                    <input class="input" type="text" id="altura" placeholder="CM">
+                </div>
+    
+                <div class="content">
+                    <label>Peso:</label>
+                    <input class="input" type="text" id="peso" placeholder="KG">
+                </div>
+
+                <div class="content">
+                    <label>Atividade fisica:</label>
+                    <select id="graus">
+                        <option name="graus" value="Sedentário">Sedentário
+                        <option name="graus" value="Pouco ativo">Pouco ativo
+                        <option name="graus" value="Moderadamente ativo">Moderadamente ativo
+                        <option name="graus" value="Muito ativo">Muito ativo
+                        <option name="graus" value="Extremamente ativo">Extremamente ativo
+                    </select>
+                </div>
+    
+                <div id="btns" class="content">
+                    <input class="btn" type="submit" id="calcular" value="Calcular">
+                    <input class="btn" type="reset" id="reset" value="Limpar">
+                </div>
+            </form>
+            <div>
+                <p id="resposta"></p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
